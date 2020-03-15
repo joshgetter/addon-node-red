@@ -11,7 +11,7 @@
   "startup": "application",
   "homeassistant": "0.92.0b2",
   "arch": ["armhf"],
-  "image": "joshgetter/home-assistant-nodered",
+  "image": "joshgetter/{arch}-home-assistant-nodered",
   "ports": {
     "80/tcp": 1880
   },
