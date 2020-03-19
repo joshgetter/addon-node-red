@@ -50,7 +50,6 @@
     "node-red-node-twitter": "1.1.6",
     "snyk": "1.298.1",
     "@node-red-contrib-themes/midnight-red": "1.2.2",
-    // Puppeteer
     "puppeteer-core": "1.10.0",
     "puppeteer-cluster": "0.19.0"
   },
