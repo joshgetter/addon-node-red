@@ -33,6 +33,8 @@ RUN \
         patch=2.7.6-r6 \
         paxctl=0.9-r0 \
         python2=2.7.16-r3 \
+        # Add chrome
+        chromium \
     \
     && paxctl -cm "$(command -v node)" \
     \
