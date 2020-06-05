@@ -9,6 +9,7 @@
   "ingress_port": 0,
   "panel_icon": "mdi:sitemap",
   "startup": "application",
+  "init": false,
   "homeassistant": "0.92.0b2",
   "arch": ["armhf"],
   "image": "joshgetter/{arch}-home-assistant-nodered",

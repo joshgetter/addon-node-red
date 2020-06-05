@@ -1,4 +1,4 @@
-ARG BUILD_FROM=hassioaddons/base:7.0.3
+ARG BUILD_FROM=hassioaddons/base:7.2.0
 # hadolint ignore=DL3006
 FROM ${BUILD_FROM}
 
@@ -14,16 +14,16 @@ SHELL ["/bin/bash", "-o", "pipefail", "-c"]
 # Setup base
 RUN \
     apk add --no-cache --virtual .build-dependencies \
-        g++=9.2.0-r3 \
-        gcc=9.2.0-r3 \
+        g++=9.2.0-r4 \
+        gcc=9.2.0-r4 \
         libc-dev=0.7.2-r0 \
         linux-headers=4.19.36-r0 \
         make=4.2.1-r2 \
         py2-pip=18.1-r0 \
-        python2-dev=2.7.16-r3 \
+        python2-dev=2.7.18-r0 \
     \
     && apk add --no-cache \
-        git=2.24.1-r0 \
+        git=2.24.3-r0 \
         lua-resty-http=0.15-r0 \
         nginx-mod-http-lua=1.16.1-r6 \
         nginx=1.16.1-r6  \
@@ -32,9 +32,9 @@ RUN \
         openssh-client=8.1_p1-r0 \
         patch=2.7.6-r6 \
         paxctl=0.9-r0 \
-        python2=2.7.16-r3 \
+        python2=2.7.18-r0 \
         # Add chrome
-        chromium \
+        chromium=81.0.4044.113-r0 \
     \
     && paxctl -cm "$(command -v node)" \
     \
