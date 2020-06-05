@@ -69,12 +69,6 @@ ARG BUILD_VERSION
 
 # Labels
 LABEL \
-    io.hass.name="Node-RED" \
-    io.hass.description="Flow-based programming for the Internet of Things" \
-    io.hass.arch="${BUILD_ARCH}" \
-    io.hass.type="addon" \
-    io.hass.version=${BUILD_VERSION} \
-    maintainer="Franck Nijhof <frenck@addons.community>" \
     org.label-schema.description="Flow-based programming for the Internet of Things." \
     org.label-schema.build-date=${BUILD_DATE} \
     org.label-schema.name="Node-RED" \
