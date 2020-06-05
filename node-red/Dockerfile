@@ -17,7 +17,6 @@ RUN \
         g++=9.2.0-r3 \
         gcc=9.2.0-r3 \
         libc-dev=0.7.2-r0 \
-        musle \
         linux-headers=4.19.36-r0 \
         make=4.2.1-r2 \
         py2-pip=18.1-r0 \
